@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        tools:context=".MainActivity" >
+
+        <Button
+            android:id="@+id/btn_curta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pausa curta"
+            app:layout_constraintEnd_toStartOf="@+id/btn_longa"
+            app:layout_constraintStart_toEndOf="@+id/btn_pomodoro"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_pomodoro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pomodoro"
+            app:layout_constraintEnd_toStartOf="@+id/btn_curta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_longa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pausa Longa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_curta"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_Começar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:text="Começar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contador" />
+
+        <Button
+            android:id="@+id/btn_Reiniciar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Reiniciar"
+            app:layout_constraintBottom_toTopOf="@+id/btn_Conf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Começar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_Conf"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="38dp"
+            android:text="@string/Settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="318dp"
+            android:layout_height="167dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/Cronometro"
+            android:textAlignment="center"
+            android:textSize="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_curta" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
