@@ -1,4 +1,3 @@
-Utilizando Readme.md pela primeira vez
+Repositório de Android Studio
 
-
-modo teste
+Aplicações em Android Studio utilizando Java como linguagem padrão.
